@@ -10,11 +10,12 @@
         #main
         {
             width:800px;
-            height:700px;
+            height:2000px;
             background-color:lightblue;
             margin:20px;
             margin-left:auto;
             margin-right:auto;
+            position:relative;
         }
 
         #div1
@@ -23,6 +24,9 @@
             height:100px;
             background-color:lightcoral;
             margin-bottom:10px;
+            position:fixed;
+            bottom:0px;
+            z-index:99;
         }
 
         #div2 
@@ -31,6 +35,8 @@
             height: 100px;
             background-color: lightgoldenrodyellow;
             margin-bottom: 10px;
+            position:relative;
+            left:-50px;
         }
 
         #div3
@@ -39,6 +45,8 @@
             height: 100px;
             background-color: lightgrey;
             margin-bottom: 10px;
+            position:absolute;
+            bottom:5px
         }
 
         #div4 
@@ -47,6 +55,8 @@
             height: 100px;
             background-color: darkolivegreen;
             margin-bottom: 10px;
+            position:sticky;
+            top:0px;
         }
 
         #div5
@@ -64,10 +74,54 @@
             background-color: lightsalmon;
             margin-bottom: 10px;
         }
+
+        .sp1
+        {
+            width:100px;
+            height:100px;
+            background-color: rgb(21, 255, 109);
+            margin:10px;
+            display:inline-block;
+        }
+
+        .dv1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(21, 255, 109);
+            margin: 10px;
+            display: block;
+        }
+
+        #foot
+        {
+            height:100px;
+            background-color:grey;
+            display:flex;
+            flex-direction:column;
+        }
+
     </style>
 </head>
 
 <body>
+
+    <div>
+        <div id="f1">
+            <img scr="head1.png" style="height:50px;"/>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+    <span class="sp1">span1</span>
+    <span class="sp1">span2</span>
+    <span class="sp1">span3</span>
+
+    <div class="dv1">div1</div>
+    <div class="dv1">div2</div>
+    <div class="dv1">div3</div>
 
     <div id="main">
         <div id="div1">div1</div>
