@@ -1,26 +1,228 @@
 <html>
 <head>
-    <title>MIS 3033 Exam 2 Spring 2024 [Exam Code Here] Daniel Rickmeyer</title>
+    <title>MIS 3033 Exam 2 Spring 2024 [EWOK] Daniel Rickmeyer</title>
     <link rel="icon" href="static/img/head1.png"/>
     <link rel="stylesheet" href="static/site.css"/>   
     
     <style>
+        #main
+        {
+            
+            width:800px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        
+
+        #header
+        {
+            display:flex;
+            flex-direction:row;
+            
+        }
+
+        #topleft
+        {
+            
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgray;
+            border-radius:5px;
+            margin-left:400px;
+            width:200px;
+            height:70px;
+            align-content:center;
+            
+        }
+
+        #topright {
+            
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+            width: 200px;
+            height: 70px;
+            align-content: center;
+            justify-content: center;
+        }
+
+        #content1 
+        {
+            height:80px;
+            
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+        }
+
+        #content2 
+        {
+            
+            display:flex;
+            flex-direction:row;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        #leftdiv 
+        {
+           
+            width:280px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        #rightdiv
+        {
+            
+            width:510px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        #footer 
+        {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+            
+            height: 60px;
+            display:flex;
+            flex-direction:row;
+            align-content:center;
+            justify-content:center;
+        }
+
+        #title
+        {
+            text-transform:uppercase;
+            background-color:lightskyblue;
+            border-radius:5px;
+        }
+
+        #top 
+        {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        #bottom 
+        {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+            
+        }
+
+        #pics 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #pic 
+        {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
 
 <body>
-    [Exam Code]
-    <img src="static/img/a.svg" style="height:50px;"/>
-    <img src="static/img/b.svg" style="height:50px;"/>
-    <img src="static/img/css.svg" style="height:50px;"/>
-    <img src="static/img/head1.png" style="height:50px;"/>
-    <img src="static/img/head2.png" style="height:50px;"/>
-    <img src="static/img/html.svg" style="height:50px;"/>
-    <img src="static/img/javascript.svg" style="height:50px;"/>
-    <img src="static/img/linkedin.png" style="height:50px;"/>
-    <img src="static/img/logo.svg" style="height:50px;"/>
-    <img src="static/img/sqlite.svg" style="height:50px;"/>
+    [EWOK]
+    <div id="main">
+        
+        <div id="header">
+            <div id="topleft">MIS 3033 Exam 2 <br />Daniel Rickmeyer</div>
+            <div id="topright">[EWOK]</div>
+        </div>
+
+
+        <div id="content1">
+            <img src="static/img/head1.png" style="height:60px; border-radius:50%;" />
+            <div>Daniel Rickmeyer <br />MIS Student</div>
+            <a href="https://www.linkedin.com/">
+                <img src="static/img/linkedin.png" style="width:30px" />
+            </a>
+        </div>
+
+
+        <div id="content2">
+            <div id="leftdiv">
+                <span id="title">Recent News:</span>
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li>Learned <img src="static/img/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+            </div>
+            <div id="rightdiv">
+                <div id="top">
+                    <span id="title">About Me</span><br />
+                    I am a MIS student. I like programming and I am good at C#. I learned Entity Framework to Database
+                    Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun.
+                    Later I will learn C# .NET MVC dynamic web app development and Web API development.
+                </div>
+                <div id="bottom">
+                    <span id="title">Achievements</span>
+                    <div id="pics">
+                        <div id="pic">
+                            <img src="static/img/html.svg" style="height:100px;" /><br />HTML
+                        </div>
+
+                        <div id="pic">
+                            <img src="static/img/css.svg" style="height:100px;"/> <br />CSS
+
+                        </div>
+
+                        <div id="pic">
+                            <img src="static/img/javascript.svg" style="height:100px;" /><br />JavaScript
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div style="font-weight:bold;font-size:20px;color:grey;">
+                Developed by Daniel Rickmeyer for MIS 3033 Exam 2
+            </div>
+            <img src="static/img/logo.svg" style="height:50px;" />
+        </div>
+
+
+
+    </div>
+    
+    
+    
+    
+    
+    
 
 </body>
 
